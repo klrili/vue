@@ -11,7 +11,9 @@
             <div @click="ChooseRestaurant((id = 1))" class="col">
               <h1
                 class="text-white id_choose_menu"
-                :class="{ 'border-bottom border-3 border-white': id === 1 }"
+                :class="{
+                  'border-bottom border-3 border-white': id === 1 || (id !== 2) & (id !== 3),
+                }"
               >
                 West
               </h1>
